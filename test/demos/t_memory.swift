@@ -1,63 +1,30 @@
 //
-//  HomeView.swift
+//  t_memory.swift
 //  test
 //
-//  Created by apple on 5/20/24.
+//  Created by apple on 5/31/24.
 //
 
 import SwiftUI
-import Foundation
-import MachO
-import os
 
-import UIKit
-
-//func getAppMemoryUsage() -> Double? {
-//    var info = task_vm_info_data_t()
-//    var count = mach_msg_type_number_t(MemoryLayout<task_vm_info_data_t>.size) / 4
-//
-//    let result: kern_return_t = withUnsafeMutablePointer(to: &info) { ptr in
-//        ptr.withMemoryRebound(to: integer_t.self, capacity: 1) { intPtr in
-//            task_info(mach_task_self_, task_flavor_t(TASK_VM_INFO), intPtr, &count)
-//        }
-//    }
-//    if result == KERN_SUCCESS {
-//        let memoryUsageInBytes = info.phys_footprint
-//        let memoryUsageInMB = Double(memoryUsageInBytes) / (1024 * 1024)
-//        return memoryUsageInMB
-//    } else {
-//        return nil
-//    }
-//}
-
-
-
-import UIKit
-
-
-
-struct HomeView: View {
+struct t_memory: View {
     
-    @State var username: String = "你好, 火星"
     @State var memoryUsage: Double = 0
     
     var body: some View {
-        
         VStack {
-            Text(username)
             Text(String(format: "当前应用占用的内存: %.2f MB", memoryUsage))
             
-            Button("open", action: {
-                getAppMemoryUsage()
+            Button("点击获取内存", action: {
+                self.memoryUsage = getAppMemoryUsage() ?? 0
             })
+            .buttonStyle(.bordered)
         }
         .onAppear {
 //            Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { _ in
 //                if let memoryUsage = getAppMemoryUsage() {
 //                    self.memoryUsage = memoryUsage
 //                    print("当前应用占用的内存: \(memoryUsage) MB")
-//                } else {
-//                    print("无法获取内存使用情况")
 //                }
 //            }
         }
@@ -85,11 +52,8 @@ struct HomeView: View {
             return nil
         }
     }
-    
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
+#Preview {
+    t_memory()
 }

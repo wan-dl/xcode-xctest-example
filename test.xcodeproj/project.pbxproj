@@ -16,10 +16,11 @@
 		E58952C22BFAF90A00512195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58952C12BFAF90A00512195 /* Assets.xcassets */; };
 		E58952C52BFAF90A00512195 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58952C42BFAF90A00512195 /* Preview Assets.xcassets */; };
 		E58952EB2BFAF99F00512195 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58952EA2BFAF99F00512195 /* HomeView.swift */; };
-		E58952EC2BFAF99F00512195 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58952EA2BFAF99F00512195 /* HomeView.swift */; };
 		E5A36B542BFF33700035BBBC /* AllUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A36B532BFF33700035BBBC /* AllUIView.swift */; };
 		E5A36B572BFF34B70035BBBC /* t_input.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A36B562BFF34B70035BBBC /* t_input.swift */; };
 		E5A36B592BFF36860035BBBC /* test_input.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A36B582BFF36860035BBBC /* test_input.swift */; };
+		E5BDB46E2C09C38C00534E7D /* t_memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BDB46D2C09C38C00534E7D /* t_memory.swift */; };
+		E5BDB4732C09C60000534E7D /* t_cpu_usage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BDB4722C09C60000534E7D /* t_cpu_usage.swift */; };
 		E5CAC08A2C0466C600BACFE9 /* t_button.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CAC0892C0466C600BACFE9 /* t_button.swift */; };
 		E5D7E2C92C00465F004A6062 /* test_waitEl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D7E2C82C00465F004A6062 /* test_waitEl.swift */; };
 		E5E15F0C2C046AA000E8A82D /* test_button.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E15F0B2C046AA000E8A82D /* test_button.swift */; };
@@ -55,6 +56,8 @@
 		E5A36B532BFF33700035BBBC /* AllUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUIView.swift; sourceTree = "<group>"; };
 		E5A36B562BFF34B70035BBBC /* t_input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = t_input.swift; sourceTree = "<group>"; };
 		E5A36B582BFF36860035BBBC /* test_input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_input.swift; sourceTree = "<group>"; };
+		E5BDB46D2C09C38C00534E7D /* t_memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = t_memory.swift; sourceTree = "<group>"; };
+		E5BDB4722C09C60000534E7D /* t_cpu_usage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = t_cpu_usage.swift; sourceTree = "<group>"; };
 		E5CAC0892C0466C600BACFE9 /* t_button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = t_button.swift; sourceTree = "<group>"; };
 		E5D7E2C82C00465F004A6062 /* test_waitEl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_waitEl.swift; sourceTree = "<group>"; };
 		E5E15F0B2C046AA000E8A82D /* test_button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_button.swift; sourceTree = "<group>"; };
@@ -107,14 +110,14 @@
 		E58952BC2BFAF90800512195 /* test */ = {
 			isa = PBXGroup;
 			children = (
-				E5A36B532BFF33700035BBBC /* AllUIView.swift */,
 				E58952BF2BFAF90800512195 /* ContentView.swift */,
-				E58952EA2BFAF99F00512195 /* HomeView.swift */,
 				E58952BD2BFAF90800512195 /* testApp.swift */,
 				E58952C12BFAF90A00512195 /* Assets.xcassets */,
-				E5A36B552BFF34850035BBBC /* examples */,
-				E58952C32BFAF90A00512195 /* Preview Content */,
+				E5BDB46C2C09C36B00534E7D /* demos */,
+				E5BDB4702C09C44200534E7D /* examples */,
 				E5E15F1B2C04897300E8A82D /* Localizable.strings */,
+				E58952C32BFAF90A00512195 /* Preview Content */,
+				E5BDB4712C09C51500534E7D /* tabBar */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -145,15 +148,33 @@
 			path = testUITests;
 			sourceTree = "<group>";
 		};
-		E5A36B552BFF34850035BBBC /* examples */ = {
+		E5BDB46C2C09C36B00534E7D /* demos */ = {
 			isa = PBXGroup;
 			children = (
-				E5A36B562BFF34B70035BBBC /* t_input.swift */,
-				E5CAC0892C0466C600BACFE9 /* t_button.swift */,
-				E5F6DA342C0731A600E5E7CE /* t_silder.swift */,
-				E57067962C09882000C15843 /* t_swipeUp.swift */,
+				E5BDB46D2C09C38C00534E7D /* t_memory.swift */,
+				E5BDB4722C09C60000534E7D /* t_cpu_usage.swift */,
 			);
-			name = examples;
+			path = demos;
+			sourceTree = "<group>";
+		};
+		E5BDB4702C09C44200534E7D /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				E57067962C09882000C15843 /* t_swipeUp.swift */,
+				E5F6DA342C0731A600E5E7CE /* t_silder.swift */,
+				E5CAC0892C0466C600BACFE9 /* t_button.swift */,
+				E5A36B562BFF34B70035BBBC /* t_input.swift */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		E5BDB4712C09C51500534E7D /* tabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E58952EA2BFAF99F00512195 /* HomeView.swift */,
+				E5A36B532BFF33700035BBBC /* AllUIView.swift */,
+			);
+			path = tabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +292,10 @@
 			files = (
 				E5F6DA352C0731A600E5E7CE /* t_silder.swift in Sources */,
 				E58952EB2BFAF99F00512195 /* HomeView.swift in Sources */,
+				E5BDB46E2C09C38C00534E7D /* t_memory.swift in Sources */,
 				E57067972C09882000C15843 /* t_swipeUp.swift in Sources */,
 				E5A36B542BFF33700035BBBC /* AllUIView.swift in Sources */,
+				E5BDB4732C09C60000534E7D /* t_cpu_usage.swift in Sources */,
 				E58952C02BFAF90800512195 /* ContentView.swift in Sources */,
 				E5A36B572BFF34B70035BBBC /* t_input.swift in Sources */,
 				E5CAC08A2C0466C600BACFE9 /* t_button.swift in Sources */,
@@ -288,7 +311,6 @@
 				E5F6DA332C072FA100E5E7CE /* test_screenshot.swift in Sources */,
 				E5F953032C00804200C4A9B8 /* test_uniapp_input.swift in Sources */,
 				E57067932C09783000C15843 /* test_SwipeBack.swift in Sources */,
-				E58952EC2BFAF99F00512195 /* HomeView.swift in Sources */,
 				E5A36B592BFF36860035BBBC /* test_input.swift in Sources */,
 				E55FFFA12BFDA0080068F725 /* testPerformanceTests.swift in Sources */,
 				E5F6DA392C0734C800E5E7CE /* test_slider.swift in Sources */,
