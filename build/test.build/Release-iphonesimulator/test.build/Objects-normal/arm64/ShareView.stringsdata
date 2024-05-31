@@ -1,0 +1,12 @@
+{
+  "source": "/Users/hx/t-projects/test/test/ShareView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Hello, World!"
+      }
+    ]
+  },
+  "version": 1
+}

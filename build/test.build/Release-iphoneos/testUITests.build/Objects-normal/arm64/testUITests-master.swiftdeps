@@ -1,0 +1,10 @@
+version: "Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)"
+options: "59cdcc26e91ff1723ffd784f8e676358124d48cff7fb669b31e9305a5a1d6b9c"
+build_start_time: [1716366674, 531342000]
+build_end_time: [1716366678, 114037000]
+inputs:
+  "/Users/hx/t-projects/test/test/HomeView.swift": [1716194496, 702637168]
+  "/Users/hx/t-projects/test/test/MyView.swift": [1716193227, 421090127]
+  "/Users/hx/t-projects/test/test/ShareView.swift": [1716175413, 264999217]
+  "/Users/hx/t-projects/test/testUITests/testPerformanceTests.swift": [1716363151, 301211230]
+  "/Users/hx/t-projects/test/testUITests/testUITestsLaunchTests.swift": [1716283749, 103549813]

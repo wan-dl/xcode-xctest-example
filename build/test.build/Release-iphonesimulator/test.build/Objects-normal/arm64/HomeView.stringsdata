@@ -1,0 +1,20 @@
+{
+  "source": "/Users/hx/t-projects/test/test/HomeView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "username"
+      },
+      {
+        "comment": "",
+        "key": "password"
+      },
+      {
+        "comment": "",
+        "key": "Login"
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,11 @@
+version: "Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)"
+options: "96597dc0b800e0cbd4239b2fd67263acf8dfe9bfbc1b6d6996a8987b8257fb56"
+build_start_time: [1716369715, 888058000]
+build_end_time: [1716369718, 486171000]
+inputs:
+  "/Users/hx/t-projects/test/build/test.build/Release-iphonesimulator/test.build/DerivedSources/GeneratedAssetSymbols.swift": [1716369715, 722458350]
+  "/Users/hx/t-projects/test/test/ContentView.swift": [1716193173, 85782133]
+  "/Users/hx/t-projects/test/test/HomeView.swift": [1716194496, 702637168]
+  "/Users/hx/t-projects/test/test/MyView.swift": [1716193227, 421090127]
+  "/Users/hx/t-projects/test/test/ShareView.swift": [1716175413, 264999217]
+  "/Users/hx/t-projects/test/test/testApp.swift": [1716369436, 88324925]

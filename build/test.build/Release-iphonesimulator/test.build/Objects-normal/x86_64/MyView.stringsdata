@@ -1,0 +1,12 @@
+{
+  "source": "/Users/hx/t-projects/test/test/MyView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Login Success!"
+      }
+    ]
+  },
+  "version": 1
+}

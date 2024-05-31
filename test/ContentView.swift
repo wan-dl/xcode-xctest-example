@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  test
 //
-//  Created by hx on 5/20/24.
+//  Created by apple on 5/20/24.
 //
 
 import SwiftUI
@@ -17,15 +17,11 @@ struct ContentView: View {
                     Label("Home", systemImage: "house")
                 }
             
-            ShareView()
+            AllUIView()
                 .tabItem {
-                    Label("Share", systemImage: "square.and.arrow.up.circle.fill")
+                    Label("Test", systemImage: "list.bullet")
                 }
         }
-        .onAppear() {
-            print("==============")
-        }
-        
     }
 }
 

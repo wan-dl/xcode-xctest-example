@@ -1,0 +1,9 @@
+"/Users/hx/t-projects/test/test/ShareView.swift":
+  swiftdoc: "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/test.swiftdoc"
+  dependencies: "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/test-master.d"
+  objc-header: "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/test-Swift.h"
+  abi-baseline-json: "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/test.abi.json"
+  swiftmodule: "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/test.swiftmodule"
+  diagnostics: "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/test-master.dia"
+  swiftsourceinfo: "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/test.swiftsourceinfo"
+  const-values: "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/test-master.swiftconstvalues"

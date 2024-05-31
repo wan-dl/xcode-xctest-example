@@ -1,0 +1,40 @@
+{
+  "" : {
+    "const-values" : "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/test-master.swiftconstvalues",
+    "dependencies" : "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/test-master.d",
+    "diagnostics" : "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/test-master.dia",
+    "emit-module-dependencies" : "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/test-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/test-master-emit-module.dia",
+    "swift-dependencies" : "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/test-master.swiftdeps"
+  },
+  "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/test.build/Release-iphoneos/test.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  },
+  "/Users/hx/t-projects/test/test/ContentView.swift" : {
+    "index-unit-output-path" : "/test.build/Release-iphoneos/test.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/hx/t-projects/test/test/HomeView.swift" : {
+    "index-unit-output-path" : "/test.build/Release-iphoneos/test.build/Objects-normal/arm64/HomeView.o",
+    "llvm-bc" : "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/HomeView.bc",
+    "object" : "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/HomeView.o"
+  },
+  "/Users/hx/t-projects/test/test/MyView.swift" : {
+    "index-unit-output-path" : "/test.build/Release-iphoneos/test.build/Objects-normal/arm64/MyView.o",
+    "llvm-bc" : "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/MyView.bc",
+    "object" : "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/MyView.o"
+  },
+  "/Users/hx/t-projects/test/test/ShareView.swift" : {
+    "index-unit-output-path" : "/test.build/Release-iphoneos/test.build/Objects-normal/arm64/ShareView.o",
+    "llvm-bc" : "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/ShareView.bc",
+    "object" : "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/ShareView.o"
+  },
+  "/Users/hx/t-projects/test/test/testApp.swift" : {
+    "index-unit-output-path" : "/test.build/Release-iphoneos/test.build/Objects-normal/arm64/testApp.o",
+    "llvm-bc" : "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/testApp.bc",
+    "object" : "/Users/hx/t-projects/test/build/test.build/Release-iphoneos/test.build/Objects-normal/arm64/testApp.o"
+  }
+}

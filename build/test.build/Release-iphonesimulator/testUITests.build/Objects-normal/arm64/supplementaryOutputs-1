@@ -1,0 +1,9 @@
+"/Users/hx/t-projects/test/test/ShareView.swift":
+  const-values: "/Users/hx/t-projects/test/build/test.build/Release-iphonesimulator/testUITests.build/Objects-normal/arm64/testUITests-master.swiftconstvalues"
+  abi-baseline-json: "/Users/hx/t-projects/test/build/test.build/Release-iphonesimulator/testUITests.build/Objects-normal/arm64/testUITests.abi.json"
+  swiftdoc: "/Users/hx/t-projects/test/build/test.build/Release-iphonesimulator/testUITests.build/Objects-normal/arm64/testUITests.swiftdoc"
+  swiftmodule: "/Users/hx/t-projects/test/build/test.build/Release-iphonesimulator/testUITests.build/Objects-normal/arm64/testUITests.swiftmodule"
+  dependencies: "/Users/hx/t-projects/test/build/test.build/Release-iphonesimulator/testUITests.build/Objects-normal/arm64/testUITests-master.d"
+  swiftsourceinfo: "/Users/hx/t-projects/test/build/test.build/Release-iphonesimulator/testUITests.build/Objects-normal/arm64/testUITests.swiftsourceinfo"
+  diagnostics: "/Users/hx/t-projects/test/build/test.build/Release-iphonesimulator/testUITests.build/Objects-normal/arm64/testUITests-master.dia"
+  objc-header: "/Users/hx/t-projects/test/build/test.build/Release-iphonesimulator/testUITests.build/Objects-normal/arm64/testUITests-Swift.h"

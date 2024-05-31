@@ -1,0 +1,16 @@
+{
+  "source": "/Users/hx/t-projects/test/test/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Home"
+      },
+      {
+        "comment": "",
+        "key": "Share"
+      }
+    ]
+  },
+  "version": 1
+}

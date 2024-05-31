@@ -1,0 +1,46 @@
+{
+  "configurations" : [
+    {
+      "id" : "3E77BE89-1807-40D3-A68D-6D5020E953B0",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "addressSanitizer" : {
+      "enabled" : true
+    },
+    "commandLineArgumentEntries" : [
+      {
+        "argument" : "",
+        "enabled" : false
+      }
+    ],
+    "language" : "zh-Hans",
+    "testExecutionOrdering" : "random",
+    "testTimeoutsEnabled" : true,
+    "uiTestingScreenshotsLifetime" : "keepAlways"
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "PerformanceTests",
+        "testUITestsBtn",
+        "testUITestsInput",
+        "testUITestsScreenshot",
+        "testUITestsUniApp",
+        "testUITestsWaitElement",
+        "test_SwipeBack",
+        "test_slider"
+      ],
+      "target" : {
+        "containerPath" : "container:test.xcodeproj",
+        "identifier" : "E58952D32BFAF90A00512195",
+        "name" : "testUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
