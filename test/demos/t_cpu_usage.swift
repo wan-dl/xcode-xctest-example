@@ -24,7 +24,7 @@ struct t_cpu_usage: View {
     
     func get_cpu_info() {
         DispatchQueue.global(qos: .background).async {
-            let usage: Double = hostCPULoadInfo()!
+            let usage: Double = getCPUUsage()
             DispatchQueue.main.async {
                 self.cpuUsage = usage
             }
@@ -33,34 +33,62 @@ struct t_cpu_usage: View {
 
 }
 
+func getCPUUsage() -> Double {
+    var kr: kern_return_t
+    var task_info_count: mach_msg_type_number_t
 
-func hostCPULoadInfo() -> Double? {
-    let HOST_CPU_LOAD_INFO_COUNT = MemoryLayout<host_cpu_load_info_data_t>.stride / MemoryLayout<integer_t>.stride
-    var size = mach_msg_type_number_t(HOST_CPU_LOAD_INFO_COUNT)
-    var cpuLoadInfo = host_cpu_load_info()
+    task_info_count = mach_msg_type_number_t(TASK_INFO_MAX)
+    var tinfo = task_basic_info()
+    var task_info_out = [integer_t](repeating: 0, count: Int(task_info_count))
 
-    let result = withUnsafeMutablePointer(to: &cpuLoadInfo) {
-        $0.withMemoryRebound(to: integer_t.self, capacity: HOST_CPU_LOAD_INFO_COUNT) {
-            host_statistics(mach_host_self(), HOST_CPU_LOAD_INFO, $0, &size)
+    kr = withUnsafeMutablePointer(to: &tinfo) {_ in 
+        task_info_out.withUnsafeMutableBufferPointer {
+            task_info(mach_task_self_, task_flavor_t(TASK_BASIC_INFO), $0.baseAddress, &task_info_count)
         }
     }
-    
-    if result != KERN_SUCCESS {
-        print("Error - \(#file): \(#function) - kern_result_t = \(result)")
-        return nil
+
+    if kr != KERN_SUCCESS {
+        return -1
     }
-    
-    let userTime = Double(cpuLoadInfo.cpu_ticks.0)
-    let systemTime = Double(cpuLoadInfo.cpu_ticks.1)
-    let idleTime = Double(cpuLoadInfo.cpu_ticks.2)
-    let niceTime = Double(cpuLoadInfo.cpu_ticks.3)
 
-    let totalTime = userTime + systemTime + idleTime + niceTime
-    let usedTime = userTime + systemTime + niceTime
+    var thread_list: thread_act_array_t?
+    var thread_count = mach_msg_type_number_t()
 
-    let cpuUsagePercentage = (usedTime / totalTime) * 100.0
-    return cpuUsagePercentage
+    kr = withUnsafeMutablePointer(to: &thread_list) { thread_listPtr in
+        thread_listPtr.withMemoryRebound(to: (thread_act_array_t?).self, capacity: 1) { reboundedPtr in
+            task_threads(mach_task_self_, reboundedPtr, &thread_count)
+        }
+    }
+
+    if kr != KERN_SUCCESS {
+        return -1
+    }
+
+    var tot_cpu: Double = 0
+
+    if let thread_list = thread_list {
+        for i in 0..<thread_count {
+            var thinfo = thread_basic_info()
+            var thread_info_count = mach_msg_type_number_t(THREAD_INFO_MAX)
+            kr = withUnsafeMutablePointer(to: &thinfo) {
+                $0.withMemoryRebound(to: integer_t.self, capacity: 1) { reboundedPtr in
+                    thread_info(thread_list[Int(i)], thread_flavor_t(THREAD_BASIC_INFO), reboundedPtr, &thread_info_count)
+                }
+            }
+
+            if kr != KERN_SUCCESS {
+                return -1
+            }
+
+            if (thinfo.flags & TH_FLAGS_IDLE) == 0 {
+                tot_cpu += (Double(thinfo.cpu_usage) / Double(TH_USAGE_SCALE)) * 100.0
+            }
+        }
+    }
+
+    return tot_cpu
 }
+
 
 
 #Preview {
